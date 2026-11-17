@@ -42,7 +42,7 @@
    }
    if(result&&result.status==='saved'){
     queueMicrotask(()=>document.dispatchEvent(new CustomEvent('pr:saved')));
-    status('Роботу здано: створення файла на Google Диску підтверджено. Номер здавання: '+id+'. Власну копію звіту можна завантажити нижче.','success');
+    status('Роботу здано: створення файла на Google Диску підтверджено. Номер здавання: '+id+'.','success');
    }else if(result&&result.status==='error')status(errorText(result.code),'error');
    else status('Підтвердження поки не отримано. Файл міг зберегтися. Натисніть кнопку повторно: для цього вмісту використовується той самий номер здавання.','error');
   }catch{status('Не вдалося підтвердити збереження. Перевірте інтернет.','error');}
