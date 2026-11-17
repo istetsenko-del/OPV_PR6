@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#163c37">
+  <meta name="description" content="Інтерактивна практична робота № 6: запуск друку та контроль відбитка. 10 кроків, 50 запитань і карта запуску.">
+  <title>Практична 06 — Лабораторія друку</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./drive-config.js" defer></script><script src="./data.js" defer></script><script src="./app.js" defer></script><script src="./drive.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Перейти до завдання</a>
+<div class="shell">
+  <aside class="sidebar" aria-label="Навігація практичною роботою">
+    <a href="./" class="brand"><span class="brand-icon" aria-hidden="true">◫</span><span>ДРУКАРСЬКА<br><strong>ДІЛЬНИЦЯ / 06</strong></span></a>
+    <div class="course-label">ОСНОВИ ПОЛІГРАФІЧНОГО ВИРОБНИЦТВА</div>
+    <h2 class="side-title">Лабораторія<br>друку</h2>
+    <div class="progress-copy"><span id="progress-label">0 із 10 кроків</span><span id="progress-percent">0 %</span></div>
+    <progress id="progress" max="10" value="0" aria-label="Завершені кроки"></progress>
+    <nav id="step-nav" aria-label="Кроки роботи"></nav>
+    <button id="summary-button" class="side-report" type="button" disabled>↗ Підсумок і звіт</button>
+    <div class="side-bottom"><span class="save-dot" aria-hidden="true"></span><span id="save-status" role="status">Прогрес зберігається у браузері</span></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span>ПРАКТИЧНА РОБОТА № 6</span><span class="pill">Онлайн · 2 курс</span></header>
+    <main id="main" tabindex="-1">
+      <div class="page-eyebrow">АРКУШЕВИЙ ОФСЕТ · КЕЙС Д06</div>
+      <h1>Запуск друку<br><em>та контроль відбитка</em></h1>
+      <p class="lead">Запустіть наклад із 2 400 листівок, перевірте відбитки й вирішіть, як завершити замовлення після збою суміщення.</p>
+      <section class="overview" aria-label="Як працювати">
+        <div><strong>10</strong><span>кроків</span></div><div><strong>50</strong><span>запитань із поясненнями</span></div><div><strong>1</strong><span>карта запуску</span></div>
+      </section>
+      <details class="brief"><summary><span>Картка замовлення</span><span class="small">Вихідні дані</span></summary>
+        <div class="brief-body"><div><h3>Замовлення Д06</h3><p>2 400 придатних листівок, по 2 на аркуші. Макет V3, друк CMYK. Папір П-17, 350 × 500 мм, 150 г/м².</p></div><div><h3>Умови роботи</h3><p>Початковий запас 1 300 аркушів. Записуйте формули й рішення для карти запуску. Допуски та правила обліку наведено в кроках. Калькулятор дозволено.</p></div></div>
+      </details>
+      <section class="identity" aria-label="Дані студента"><label>ПІБ студента<input id="student-name" autocomplete="name" placeholder="Введіть ПІБ" maxlength="120"></label><label>Група<input id="student-group" placeholder="Наприклад, ВП-21" maxlength="40"></label></section>
+      <section id="step-content" aria-label="Поточний крок"></section>
+      <section id="summary-content" hidden aria-label="Підсумок роботи"></section>
+      <footer class="footer"><span>Навчальна майстерня · Видавництво та поліграфія</span></footer>
+      <p id="notice" role="status" class="notice"></p>
+    </main>
+  </div>
+</div>
+<noscript><p class="noscript">Для інтерактивних завдань увімкніть JavaScript у браузері.</p></noscript>
+</body></html>
